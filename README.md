@@ -7,5 +7,6 @@ Summary of some commonly used codes
 ### movieLens1M_process.py
 处理movieLens1M数据集，使用np存储。
 
-### pytorch.py
+### pytorch_code.py
 pytorch一些相关代码，主要为官方没有的api和功能
+ - Dropout for sparse input, pytorch对于sparse tensor没有dropout操作，这是提供对应的功能
