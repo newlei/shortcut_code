@@ -10,3 +10,6 @@ Summary of some commonly used codes
 ### pytorch_code.py
 pytorch一些相关代码，主要为官方没有的api和功能
  - Dropout for sparse input, pytorch对于sparse tensor没有dropout操作，这是提供对应的功能
+
+### plt_*.py
+画图的代码, plt_line_chart.py就是画折线图的代码。plt_bar_chart.py就是画柱状图的代码。
