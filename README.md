@@ -13,3 +13,6 @@ pytorch一些相关代码，主要为官方没有的api和功能
 
 ### plt_*.py
 画图的代码, plt_line_chart.py就是画折线图的代码。plt_bar_chart.py就是画柱状图的代码。
+
+### log_uniform_candidate_sampler.ipynb
+用来说明TensorFlow中tf.random.log_uniform_candidate_sampler函数的返回值的实现
