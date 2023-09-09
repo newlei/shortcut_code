@@ -16,3 +16,6 @@ pytorch一些相关代码，主要为官方没有的api和功能
 
 ### log_uniform_candidate_sampler.ipynb
 用来说明TensorFlow中tf.random.log_uniform_candidate_sampler函数的返回值的实现
+
+### get_gpu.py
+使用torch用来占用GPU，获取GPU的显存占用情况。
