@@ -4,6 +4,7 @@ import pdb
 import time
 import math
 def get_gpu_memory():
+    #这里是针对A100显卡，如果是其他显卡需要修改。
     os.system('nvidia-smi -q -d Memory | grep -A80 GPU | grep Free > tmp.txt')
     memory_gpu = [int(x.split()[2]) for x in open('tmp.txt','r').readlines()]
     os.system('rm tmp.txt')
@@ -16,6 +17,7 @@ while(1):
     for i in range(8):
         j = i*3+1
         gpu_free[i] =gpu_memory[i*3]#+gpu_memory[j]
+    #下面的代码就是去设置抢占哪些显卡，目前只是占用5号卡
     # try:
     #     count0 = math.floor(gpu_free[0]/574)
     #     x1=torch.ones([count0*1000, count0*1000], dtype=torch.float64).cuda(0)#574M
